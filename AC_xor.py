@@ -52,6 +52,7 @@ class SimulatedCircuit:
     _PSI_circuit: cnp.Circuit
  
     
+    
     def load_data(self, csv_file_path):
         g_keys = []
         with open(csv_file_path, 'r') as csv_file:
@@ -67,8 +68,6 @@ class SimulatedCircuit:
 
         # Load the keys dataset
         self.loaded_keys = self.load_data("g_keys_dataset_AC.csv")
-
-        # Load the given keys dataset
         csv_file_path = "g_keys_dataset_AC.csv"
 
         configuration = cnp.Configuration(
